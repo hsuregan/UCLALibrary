@@ -5,5 +5,5 @@
 
 
 ####User Interfaces
-![User interfaces displaying library details](./UI/LibraryDisplay.png)
 ![User interfaces for displaying all libraries](./UI/LibraryList.png)
+![User interfaces displaying library details](./UI/LibraryDisplay.png)
