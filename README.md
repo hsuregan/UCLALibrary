@@ -10,6 +10,7 @@ The following repository will serve as the central location for all information 
 
 #####Workflow
 * [Git & GitHub](https://github.com/orcudy/UCLALibrary/wiki/Git-Workflow)
+* [Swift Style Guide](https://github.com/raywenderlich/swift-style-guide)
 
 #####Progress 
 * [7/16/15](https://github.com/orcudy/UCLALibrary/wiki/Progress-as-of-7-16-15)
