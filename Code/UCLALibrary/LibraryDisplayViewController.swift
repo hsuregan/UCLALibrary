@@ -69,7 +69,7 @@ class LibraryDisplayViewController: UIViewController {
 //                self.library.operatingHoursForDay["Friday"].closes = formatter.dateFromString(schedule["friCloses"].string ?? "")
 //                self.library.operatingHoursForDay["Saturday"].closes = formatter.dateFromString(schedule["satCloses"].string ?? "")
 //                self.library.operatingHoursForDay["Sunday"].closes = formatter.dateFromString(schedule["sunCloses"].string ?? "")
-                
+//                
 //                self.library.operatingHoursForDay["Monday"]?.opens = schedule["monThursClosed"].string?.toBool()
 //                self.library.operatingHoursForDay["Monday"]?.opens = schedule["monThursClosed"].string?.toBool()
 //                self.library.operatingHoursForDay["Monday"]?.opens = schedule["monThursClosed"].string?.toBool()
@@ -86,7 +86,7 @@ class LibraryDisplayViewController: UIViewController {
 //                self.library.satNote = schedule["satNote"].string
 //                self.library.sunNote = schedule["sunNote"].string
                 
-                //self.setupScrollView()
+                self.setupScrollView()
                 println("success")
             },
             failure: { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
@@ -108,14 +108,21 @@ class LibraryDisplayViewController: UIViewController {
             let closeTimeComponents = calendar.components(NSCalendarUnit.HourCalendarUnit | NSCalendarUnit.MinuteCalendarUnit, fromDate: closeTime ?? NSDate())
             
             var libraryHoursView = LibraryHoursView()
-            libraryHoursView.dayOfTheWeekLabel.text = day
-            libraryHoursView.openingTimeLabel.text = "\(openTimeComponents.hour):\(openTimeComponents.minute)"
-            libraryHoursView.closingTimeLabel.text = "\(closeTimeComponents.hour):\(closeTimeComponents.minute)"
+            libraryHoursView.dayOfTheWeekLabel.text = "ugh"//day
+            libraryHoursView.openingTimeLabel.text = "ugh"//"\(openTimeComponents.hour):\(openTimeComponents.minute)"
+            libraryHoursView.closingTimeLabel.text = "ugh"//"\(closeTimeComponents.hour):\(closeTimeComponents.minute)"
             
+            //fit text size
+//            libraryHoursView.dayOfTheWeekLabel.adjustsFontSizeToFitWidth = true
+//            libraryHoursView.openingTimeLabel.adjustsFontSizeToFitWidth = true
+//            libraryHoursView.closingTimeLabel.adjustsFontSizeToFitWidth = true
+
             libraryHoursView.frame.origin = CGPoint(x: offset * libraryHoursView.frame.origin.x, y: libraryHoursView.frame.origin.y)
+
             libraryHoursScrollView.addSubview(libraryHoursView)
             offset++
             libraryHoursScrollView.contentSize = CGSize(width: libraryHoursView.frame.size.width * offset, height: libraryHoursView.frame.size.height)
+
         }
         
 

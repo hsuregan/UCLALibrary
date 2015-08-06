@@ -20,16 +20,24 @@ class LibraryHoursView: UIView {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        NSBundle.mainBundle().loadNibNamed("LibraryHoursView", owner: self, options: nil)
+    NSBundle.mainBundle().loadNibNamed("LibraryHoursView", owner: self, options: nil)
+        
+        //temporarily in place add border to each box
+        self.view.layer.borderColor = UIColor.blackColor().CGColor
+        self.view.layer.borderWidth = 2.0
         self.addSubview(view)
+
+        
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        NSBundle.mainBundle().loadNibNamed("LibraryHoursView", owner: self, options: nil)
+    NSBundle.mainBundle().loadNibNamed("LibraryHoursView", owner: self, options: nil)
 //        view.frame = frame
         bounds = view.bounds
+        self.view.layer.borderColor = UIColor.blackColor().CGColor
+        self.view.layer.borderWidth = 2.0
         self.addSubview(view)
     }
     

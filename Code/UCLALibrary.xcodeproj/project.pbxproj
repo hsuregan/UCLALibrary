@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		83738D691B5ACF8100E70A32 /* LibraryHoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83738D681B5ACF8100E70A32 /* LibraryHoursView.swift */; };
-		83738D6B1B5AE3A300E70A32 /* LibraryHoursView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83738D6A1B5AE3A300E70A32 /* LibraryHoursView.xib */; };
 		83CB32E71B58ADEE00CA8E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB32E61B58ADEE00CA8E41 /* AppDelegate.swift */; };
 		83CB32EA1B58ADEE00CA8E41 /* UCLALibrary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83CB32E81B58ADEE00CA8E41 /* UCLALibrary.xcdatamodeld */; };
 		83CB32EF1B58ADEE00CA8E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CB32ED1B58ADEE00CA8E41 /* Main.storyboard */; };
@@ -37,7 +36,6 @@
 		2D8E257C98E092FAFBE750C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5611009AA4446C08C8C0437C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83738D681B5ACF8100E70A32 /* LibraryHoursView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryHoursView.swift; sourceTree = "<group>"; };
-		83738D6A1B5AE3A300E70A32 /* LibraryHoursView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryHoursView.xib; sourceTree = "<group>"; };
 		83CB32E11B58ADEE00CA8E41 /* UCLALibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCLALibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CB32E51B58ADEE00CA8E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CB32E61B58ADEE00CA8E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 			children = (
 				83EC86F81B58BD37009FE533 /* LibraryListTableViewCell.swift */,
 				83738D681B5ACF8100E70A32 /* LibraryHoursView.swift */,
-				83738D6A1B5AE3A300E70A32 /* LibraryHoursView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -268,7 +265,6 @@
 			files = (
 				83CB32EF1B58ADEE00CA8E41 /* Main.storyboard in Resources */,
 				83CB32F41B58ADEE00CA8E41 /* LaunchScreen.xib in Resources */,
-				83738D6B1B5AE3A300E70A32 /* LibraryHoursView.xib in Resources */,
 				83CB32F11B58ADEE00CA8E41 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +502,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = UCLALibraryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCLALibrary.app/UCLALibrary";
@@ -521,6 +518,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = UCLALibraryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCLALibrary.app/UCLALibrary";
